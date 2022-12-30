@@ -1,0 +1,298 @@
+html,
+body {
+    background: #181818;
+    font-family: 'Lato', helvetica, arial, sans-serif;
+    font-size: 16px;
+    color: #222;
+}
+
+.clear {
+    clear: both;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.4em;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+#cv {
+    width: 90%;
+    max-width: 800px;
+    background: #f3f3f3;
+    margin: 30px auto;
+}
+
+.mainDetails {
+    padding: 5px 35px;
+    border-bottom: 2px solid #058ccf;
+    background: #ededed;
+}
+
+#Nom h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+    margin-bottom: -1px;
+}
+
+#Nom h2 {
+    font-size: 2em;
+    margin-left: 2px;
+    font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+}
+
+#Corps {
+    padding: 0 40px;
+}
+
+#headshot {
+    width: 12.5%;
+    float: left;
+    margin-right: 30px;
+}
+
+#headshot img {
+    width: 100%;
+    height: auto;
+}
+
+#Nom {
+    float: left;
+}
+
+#Infos {
+    float: right;
+}
+
+#Infos ul {
+    list-style-type: none;
+    font-size: 0.9em;
+    margin-top: 50px;
+}
+
+#Infos ul li {
+    margin-bottom: 3px;
+    color: #444;
+}
+
+#Infos ul li a,
+a[href^=tel] {
+    color: #444;
+    text-decoration: none;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+
+#Infos ul li a:hover {
+    color: #058ccf;
+}
+
+
+section {
+    border-top: 1px solid #058ccf;
+    padding: 20px 0 0;
+}
+
+section:first-child {
+    border-top: 0;
+}
+
+section:last-child {
+    padding: 20px 0 10px;
+}
+
+.TitreCorps {
+    float: left;
+    width: 25%;
+}
+
+.ContenuCorps {
+    float: right;
+    width: 72.5%;
+}
+
+.TitreCorps h1 {
+    font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 1.5em;
+    color: #444;
+}
+
+.ContenuCorps h2 {
+    font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    margin-bottom: -2px;
+}
+
+.Dates {
+    font-size: 0.8em;
+    font-style: italic;
+    margin-bottom: 3px;
+}
+
+.Competences {
+    list-style-type: none;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: #444;
+}
+
+.Competences ul li {
+    margin-bottom: 3px;
+}
+
+@media all and (min-width: 602px) and (max-width: 800px) {
+
+
+    .Competences {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media all and (max-width: 601px) {
+    #cv {
+        width: 95%;
+        margin: 10px auto;
+        min-width: 280px;
+    }
+
+
+
+    #Nom,
+    #Infos {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .TitreCorps,
+    .ContenuCorps {
+        float: none;
+        width: 100%;
+    }
+
+    .TitreCorps {
+        margin-left: -2px;
+        font-size: 1.25em;
+    }
+
+    .Competences {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .mainDetails {
+        padding: 15px 15px;
+    }
+
+    section {
+        padding: 15px 0 0;
+    }
+
+    #Corps {
+        padding: 0 25px;
+    }
+
+
+    .Competences {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+
+    #Nom h1 {
+        line-height: .8em;
+        margin-bottom: 4px;
+    }
+}
+
+@media print {
+    #cv {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes reset {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes reset {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes reset {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
